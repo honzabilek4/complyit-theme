@@ -20,6 +20,14 @@
     margin-bottom: 32px;
 }
 
+.cover-title {
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--white-color);
+    margin-bottom: 24px;
+}
+
 .cover-description {
     font-size: 2.4rem;
     font-weight: 600;
