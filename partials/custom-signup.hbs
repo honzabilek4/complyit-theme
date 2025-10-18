@@ -2,10 +2,10 @@
   <div class="kg-signup-card-content">
     <div class="kg-signup-card-text">
       <h2 class="kg-signup-card-heading" style="">
-        <span>Spodobał Ci się artykuł?</span>
+        <span>{{#if heading}}{{heading}}{{else}}Spodobał Ci się artykuł?{{/if}}</span>
       </h2>
       <div class="kg-signup-card-subheading" style="">
-        <span>Zapisz się do newslettera i otrzymuj co miesiąc przegląd najważniejszych tematów i zmian prawnych z minionego miesiąca.</span>
+        <span>{{#if subheading}}{{subheading}}{{else}}Zapisz się do newslettera i otrzymuj co miesiąc przegląd najważniejszych tematów i zmian prawnych z minionego miesiąca.{{/if}}</span>
       </div>
 
       <form class="kg-signup-card-form" data-members-form="signup">
@@ -37,8 +37,18 @@
             required="true"
           />
           <label for="signup-consent" class="kg-signup-card-checkbox-label">
-              Zapisując się do newslettera, akceptujesz <a href="/regulamin-newslettera/" target="_blank">Regulamin Newslettera</a> oraz zgadzasz na otrzymywanie treści edukacyjnych oraz informacji handlowych o produktach, usługach i innych inicjatywach związanych z działalnością strony: www.complyit.pl. Więcej informacji na temat przetwarzania danych osobowych znajdziesz w <a href="/polityce-prywatnosci/" target="_blank">Polityce Prywatności</a>
+              Zapisując się do newslettera, akceptujesz <a href="/regulamin-newslettera/" target="_blank">Regulamin Newslettera</a> oraz zgadzasz na otrzymywanie treści edukacyjnych oraz informacji handlowych o produktach, usługach i innych inicjatywach związanych z działalnością strony: www.complyit.pl. Więcej informacji na temat przetwarzania danych osobowych znajdziesz w <a href="/polityka-prywatnosci/" target="_blank">Polityce Prywatności</a>
           </label>
+        </div>
+
+        <div class="kg-signup-card-success" style="">
+            Email wysłany! Sprawdź swoją skrzynkę pocztową, aby zakończyć rejestrację.
+        </div>
+        <div
+          class="kg-signup-card-error"
+          style=""
+          data-members-error=""
+        >
         </div>
       </form>
     </div>
