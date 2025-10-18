@@ -40,7 +40,9 @@
                 "width": 2000
             }
         },
-        "card_assets": true,
+        "card_assets": {
+          "exclude": ["signup"]
+        },
         "custom": {
             "navigation_layout": {
                 "type": "select",

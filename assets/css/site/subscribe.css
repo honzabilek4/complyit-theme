@@ -17,6 +17,83 @@
     gap: 4px;
 }
 
+/* Custom Signup Card Styles */
+.kg-signup-card {
+    background: var(--color-lighter-gray);
+    border-radius: 12px;
+    padding: 48px 32px;
+    text-align: center;
+    grid-column: main;
+}
+
+
+.kg-signup-card-heading span{
+    font-size: 3.5rem;
+}
+
+.kg-signup-card-subheading{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.kg-signup-card-subheading span {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.kg-signup-card-fields {
+    display: flex;
+    gap: 12px;
+    margin: 0 auto 16px;
+}
+
+.kg-signup-card-fields input {
+    flex-grow: 1;
+}
+
+.kg-signup-card-checkbox {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kg-signup-card-checkbox-input {
+    margin: 0;
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--brand-color);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.kg-signup-card-checkbox-label {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #4a5568;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    text-align: left;
+}
+
+.kg-signup-card-button {
+    padding: 16px 32px;
+    color: var(--white-color);
+    background: var(--brand-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    position: relative;
+    font-family: var(--font-sans);
+}
+
 @media (max-width: 767px) {
     .subscribe .subscribe-text {
         display: none;
